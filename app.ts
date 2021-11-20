@@ -5,7 +5,7 @@ const valorarTres = document.getElementById("rate-3");
 
 const colorsArray:Array<string> = ['color--red', 'color--purple', 'color--green', 'color-blue', 'color--dark-blue', 'color--dark-blue', 'color--dark-gray', 'color--dark-green', 'color--dark-pink', 'color--brown']
 let randomColor = '';
-let weatherUrl:string = "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=964c02d67282ac68ed3a1eb13049f2e1";
+let weatherUrl:string = "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid={APITOKEN}}";
 
 const urls:Array<string> = [ "http://api.icndb.com/jokes/random", "https://icanhazdadjoke.com" ];
 let url:string  = "";

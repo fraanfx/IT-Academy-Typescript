@@ -4,7 +4,7 @@ var valorarDos = document.getElementById("rate-2");
 var valorarTres = document.getElementById("rate-3");
 var colorsArray = ['color--red', 'color--purple', 'color--green', 'color-blue', 'color--dark-blue', 'color--dark-blue', 'color--dark-gray', 'color--dark-green', 'color--dark-pink', 'color--brown'];
 var randomColor = '';
-var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=964c02d67282ac68ed3a1eb13049f2e1";
+var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid={APITOKEN}}";
 var urls = ["http://api.icndb.com/jokes/random", "https://icanhazdadjoke.com"];
 var url = "";
 var urlPosition = "";
