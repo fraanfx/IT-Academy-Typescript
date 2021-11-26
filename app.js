@@ -105,6 +105,7 @@ function valorar(actualJoke, score, dateNow) {
     reportJokes.push(comentario);
     for (var i = 0; i < reportJokes.length; i++) {
         console.log("Comentario nª" + (i + 1) + "| Valor: " + reportJokes[i].score + " Fecha: " + reportJokes[i].date + " Chiste: " + reportJokes[i].joke + " / ");
+        console.log(reportJokes[i]);
         console.log(scoreAcc);
     }
     scoreAcc = scoreAcc + comentario.score;
@@ -115,7 +116,6 @@ function valorar(actualJoke, score, dateNow) {
 }
 function applyRandomColor() {
     var randomColor = Math.floor(Math.random() * colorsArray.length);
-    console.log("sdaasd " + typeof (svgPaths));
     console.log(svgPaths);
     for (var i = 0; i < svgPaths.length; i++) {
         svgPaths[i].removeAttribute("class");

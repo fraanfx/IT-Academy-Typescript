@@ -16,7 +16,7 @@ let scored:number = undefined;
 let scoreAcc:number = 0;
 const containerChisteFetch = document.getElementById('jokeplaceFetch');
 
-const svgPaths:Array<object> = document.getElementsByTagName('path');
+const svgPaths = document.getElementsByTagName('path');
 
 console.log("hh"+svgPaths)
 
@@ -129,6 +129,7 @@ class Comentario {
         for (let i = 0; i < reportJokes.length; i++){
             
            console.log("Comentario nª"+(i+1) + "| Valor: " +reportJokes[i].score+ " Fecha: " +reportJokes[i].date +" Chiste: "+ reportJokes[i].joke+ " / " );
+           console.log(reportJokes[i])
            
             console.log(scoreAcc)
              }
@@ -142,7 +143,6 @@ class Comentario {
 
         function applyRandomColor (){
            let randomColor = Math.floor(Math.random() * colorsArray.length)
-            console.log("sdaasd "+typeof(svgPaths))
             console.log(svgPaths)
             
             for(let i = 0 ; i < svgPaths.length ; i++){
